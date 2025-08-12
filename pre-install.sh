@@ -8,7 +8,7 @@ cat ~/.ssh/id_rsa.pub
 
 echo "once added press enter"
 read
-
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone git@github.com:nachtfisch/mac-osx-setup.git dev/mac-osx-setup
 cd ~/dev/mac-osx-setup
 source install.sh
